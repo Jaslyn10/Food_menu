@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies Place</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Our Food</h1>
+        <div class="foodList" id="foodList">
+            <div class="food" id="food">
+                <img src="images/pasta.png" alt="pasta" height="100" width="130">
+                <p>Name:<span class="foodName">Pasta</span> </p>
+                <p>Price:<span class="foodPrice">Rs.100/-</span> </p>
+            </div>
+            
+        </div>
+        <button type="button" onclick="update()">Update Details</button>
+        <button type="button" onclick="addList()">Add Details</button>
+
+        <footer class="allSections">
+            <section class="about">
+                <h2>About Foodies Place...</h2>
+                <p>Hi, welcome to our page. We have a lot of food options. Please do order your fav food!</p>
+            </section>
+            <section class="menu">
+                <h2>Menu</h2>
+                <p>Briyani, Paneer pepper fry, Roti, Curry, Ghee roast</p>
+            </section>
+            <section class="contact">
+                <h2>Contact</h2>
+                <p>#145 address</p>
+                <p>99181726262</p>
+            </section>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
