@@ -4,58 +4,397 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies Place</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo">
+        <img src="images/logo.jpg" alt="Logo" style="float: left;margin-right: 15px;margin-bottom: 10px;">
+        <h1 style="font-family:'Playfair Display', serif;">Foodie</h1>
         <hr>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="home">
-            <h2 class="bs-primary-bg-subtle bs-primary-text-emphasis">Home</h2>
-            <p
+        <div class="foodh"><h2>Our Food</h2>
+            <p>Hi, welcome to our page. We have a lot of food options. Please do order your fav food!</p>
         </div>
-        <div class="foodh"><h2>Our Food</h2></div>
-        
-        <div class="foodList" id="foodList">
-            <div class="food" id="food">
-                <img src="images/pasta.png" alt="pasta" height="100" width="130">
-                <p>Name:<span class="foodName">Pasta</span> </p>
-                <p>Price:<span class="foodPrice">Rs.100/-</span> </p>
-            </div>
+        <div id="menu">
+            <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+                <h1 class="foodh">Breakfast</h1>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/bkfst1.jpg" class="card-img-top" alt="Food 1" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Banana Berry French Toast</h5>
+                                        <p>Banana Berry French Toast is a delicious breakfast treat, blending classic French toast with fresh bananas and berries. Ideal for brunch or special occasions, it offers creamy toast with juicy fruit toppings.</p>
+                                        <p class="card-text">Rs. 40.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/bkfast2.jpg" class="card-img-top" alt="Food 2" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Yum Yumm</h5>
+                                        <p>The Yum Yumm is a satisfying and savory dish that pairs crispy bread with a perfectly cooked egg and tender, thinly sliced chicken. Ideal for a quick meal or a hearty snack, this sandwich combines rich flavors and textures in every bite.</p>
+                                        <p class="card-text">Rs. 40.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/bkfst3.jpg" class="card-img-top" alt="Food 3" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Lobster Benedict</h5>
+                                        <p>Lobster Benedict is a luxurious twist on classic eggs Benedict, making it one of the most decadent brunch dishes.Treat yourself to this indulgent dish and savor every rich, flavorful bite.</p>
+                                        <p class="card-text">Rs. 60.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/bkfst4.jpg" class="card-img-top" alt="Food 4" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Strawberry Shortcake Pancakes</h5>
+                                        <p>Fluffy pancakes are filled with bursts of juicy strawberries, and topped with layers of fresh strawberries, sweet whipped cream and a delicious strawberry sauce to finish it all off.</p>
+                                        <p class="card-text">Rs. 100.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/bkfst5.jpg" class="card-img-top" alt="Food 5" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Blueberry Pancakes</h5>
+                                        <p>Blueberry Pancakes are a breakfast favorite, featuring fluffy pancakes bursting with juicy blueberries. Enjoy this delightful dish and relish the sweet, fruity goodness in every bite.</p>
+                                        <p class="card-text">Rs. 100.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/bkfst6.jpg" class="card-img-top" alt="Food 6" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Muesli</h5>
+                                        <p>Muesli is a wholesome breakfast choice, combining oats, nuts, and dried fruits for a nutritious start to your day. Dive into this healthy dish and savor the natural flavors and satisfying crunch.</p>
+                                        <p class="card-text">Rs. 160.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr>
+            <div id="foodCarousell" class="carousel slide" data-bs-ride="carousel">
+                <h1 class="foodh">Lunch</h1>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/l1.jpg" class="card-img-top" alt="Food 1" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Mediterranean rice bowl</h5>
+                                        <p>We love a good Mediterranean rice bowl, especially one filled to the brim with mouth-watering Middle Eastern flavors. Savor the rich, Mediterranean flavors in every bite.</p>
+                                        <p class="card-text">Rs. 140.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/l2.jpg" class="card-img-top" alt="Food 2" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Salmon & Rice</h5>
+                                        <p>Oven-Roasted Salmon & Rice with Coconut Tomato Sauce features tender salmon and rice in a creamy coconut tomato sauce. Enjoy this delicious meal with every bite.</p>
+                                        <p class="card-text">Rs. 140.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/l3.jpg" class="card-img-top" alt="Food 3" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Curry Roast Chicken</h5>
+                                        <p>Succulent Roasted Chicken cooked together in one pan with tender potatoes and vegetables in a creamy coconut curry sauce. Treat yourself to this indulgent dish.</p>
+                                        <p class="card-text">Rs. 160.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/l4.jpg" class="card-img-top" alt="Food 4" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Thai Red Curry Noodle Soup</h5>
+                                        <p>Thai Red Curry Noodle Soup is creamy and dreamy, with a silky coconut milk base and nourishing Chicken Bone Broth. It’s everything you need in a bowl!</p>
+                                        <p class="card-text">Rs. 180.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/l5.jpg" class="card-img-top" alt="Food 5" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Khao Soi Gai</h5>
+                                        <p>Indulge in tender chicken and egg noodles immersed in a rich coconut curry broth, topped with crispy noodles and fresh herbs. This classic dish offers a flavorful and comforting experience.</p>
+                                        <p class="card-text">Rs. 180.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/l6.jpg" class="card-img-top" alt="Food 6" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Thai Curry Noodle Soup</h5>
+                                        <p>Enjoy takeout-style Thai curry noodle soup at home! This flavorful dish features a rich curry broth, vegetables, and rotisserie chicken, all in a quick and gluten-free recipe.</p>
+                                        <p class="card-text">Rs. 260.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousell" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#foodCarousell" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr>
+            <div id="foodCarouseld" class="carousel slide" data-bs-ride="carousel">
+                <h1 class="foodh">Dinner</h1>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/d1.jpg" class="card-img-top" alt="Food 1" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Air Fryer Crispy Chicken Breast</h5>
+                                        <p>The crispy crust of the chicken breast has juicy and delicious chicken underneath. Make this crusty side dish to go with any meal.</p>
+                                        <p class="card-text">Rs. 140.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/d2.jpg" class="card-img-top" alt="Food 2" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Garlic Herb Roasted Potatoes, Carrots, and Zucchini</h5>
+                                        <p>These roasted vegetables make a quick and savory side dish that pairs perfectly with any meal. The garlic herb seasoning adds a delicious flavor to the tender potatoes, carrots, and zucchini.</p>
+                                        <p class="card-text">Rs. 140.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/d3.jpg" class="card-img-top" alt="Food 3" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Creamy Tuscan 'Marry Me' Chicken</h5>
+                                        <p>This flavorful and rich dish is perfect for a weeknight meal with the family. Creamy Tuscan 'Marry Me' Chicken is a deliciously satisfying option that everyone will love.</p>
+                                        <p class="card-text">Rs. 160.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/d4.jpg" class="card-img-top" alt="Food 4" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">BBQ Chicken Skewer Salad</h5>
+                                        <p>Enjoy a flavorful twist with BBQ Chicken Skewer Salad. Grilled chicken skewers paired with fresh greens and veggies create a deliciously satisfying and light meal.</p>
+                                        <p class="card-text">Rs. 180.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/d5.jpg" class="card-img-top" alt="Food 5" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Black Pepper Chicken</h5>
+                                        <p>An easy black pepper chicken with juicy tender chicken, crisp vegetables and a rich savory black pepper sauce. Try it, you'll like it.</p>
+                                        <p class="card-text">Rs. 180.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/d6.jpg" class="card-img-top" alt="Food 6" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Creamy Peri-Peri Chicken with Rice</h5>
+                                        <p>Chicken with rice served with creamy peri-peri sauce is a fantastic, super flavorful dinner. The chicken is perfectly seasoned and juicy and that sauce? Simply addictive!</p>
+                                        <p class="card-text">Rs. 260.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#foodCarouseld" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#foodCarouseld" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr>
+            <div id="foodCarousels" class="carousel slide" data-bs-ride="carousel">
+                <h1 class="foodh">Dessert</h1>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/s1.jpg" class="card-img-top" alt="Food 1" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Custard Rasgulla</h5>
+                                        <p>Custard Rasgullas – Velvety and delicious eggless custard sauce served with soft and spongy Rasgullas (Indian cottage cheese balls)!</p>
+                                        <p class="card-text">Rs. 80.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/s2.jpg" class="card-img-top" alt="Food 2" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Strawberry Cheesecake Falooda</h5>
+                                        <p>Strawberry cheesecake lovers will adore this fresh & fruity take on the classic Indian Falooda. A refreshing rose milkshake with basil seeds, vermicelli, milk jelly & ice cream.</p>
+                                        <p class="card-text">Rs. 100.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/s3.jpg" class="card-img-top" alt="Food 3" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Motichoor Ladoo</h5>
+                                        <p>Savor Motichoor Ladoo, a traditional Indian sweet made from tiny, golden, gram flour pearls, blended with ghee and sugar, then shaped into deliciously rich and aromatic balls.</p>
+                                        <p class="card-text">Rs. 80.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/s4.jpg" class="card-img-top" alt="Food 4" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Creamy Kheer</h5>
+                                        <p>This sweet and creamy kheer is flavoured with saffron and cardamom and is super easy to make. A delicious and simple Indian dessert!</p>
+                                        <p class="card-text">Rs. 120.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/s5.jpg" class="card-img-top" alt="Food 5" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Saffron ice creams</h5>
+                                        <p>Delight in Saffron Ice Cream, a luxurious dessert infused with the delicate flavor of saffron, creating a rich and creamy treat with a subtle, exotic aroma. Perfect for a special indulgence.</p>
+                                        <p class="card-text">Rs. 120.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/s6.jpg" class="card-img-top" alt="Food 6" height="200">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Gulab Jamun</h5>
+                                        <p>Indulge in Gulab Jamun, a classic Indian dessert made of soft, deep-fried dough balls soaked in a sweet, fragrant syrup. Perfect for satisfying your sweet tooth!</p>
+                                        <p class="card-text">Rs. 30.00/-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousels" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#foodCarousels" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr>
         </div>
-        <button type="button" onclick="update()">Update Details</button>
-        <button type="button" onclick="addList()">Add Details</button>
-        <footer class="allSections">
-            <section class="about">
-                <h2>About Foodies Place...</h2>
-                <p>Hi, welcome to our page. We have a lot of food options. Please do order your fav food!</p>
-            </section>
-            <section class="menu">
-                <h2>Menu</h2>
-                <p>Briyani, Paneer pepper fry, Roti, Curry, Ghee roast</p>
-            </section>
-            <section class="contact">
-                <h2>Contact</h2>
-                <p>#145 address</p>
-                <p>99181726262</p>
+        <footer>
+            <section class="contact" id="contact">
+                <h2 style="text-decoration:underline;">Contact</h2>
+                <p>WonderLand Street Flat No : 216</p>
+                <p>Call : 99181726262</p>
             </section>
         </footer>
     </main>
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
