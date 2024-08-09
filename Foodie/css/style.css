@@ -82,3 +82,10 @@ section {
     border-radius: 10px;
     margin:10px;
 }
+
+.foodh {
+    color: var(--bs-primary);
+    background-color: var(--bs-primary-bg-subtle);
+    border-color: var(--bs-primary-border-subtle);
+    text-emphasis-color: var(--bs-primary-text-emphasis);
+}

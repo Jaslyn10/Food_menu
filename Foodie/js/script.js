@@ -45,3 +45,4 @@ console.log(foodList);
 }
 addList("pizza","Pizza",200)
 addList("maggie","Maggie",80)
+addList("maggie","Maggie",80)
